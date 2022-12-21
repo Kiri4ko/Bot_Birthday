@@ -21,4 +21,4 @@
 **./requirements.txt** - Dependency\
 **./Makefile** - Commands: run and install requirements\
 **./config.py** - Your values are indicated: TOKEN - your bot\
-**./HB_Bot.py** - Bot launch\
+**./HB_Bot.py** - Bot launch
