@@ -19,85 +19,85 @@ class Mystery:
 
 
 q_1 = Mystery(
-    question=escape_md(Rita_Zanko),
-    answer="Рита Занько",
-    choices=["Андрей Голузов", "Рита Занько", "Волошин Андрей", "Света Полоцкая"]
+    question=escape_md(Name_1),
+    answer="Name 1",
+    choices=["Name 1", "Name 2", "Name 3", "Name 4"]
 )
 
 q_2 = Mystery(
-    question=escape_md(Andrey_Goluzov),
-    answer="Андрей Голузов",
-    choices=["Маша Голузова", "Андрей Голузов", "Роман Мишкевич", "Виталий Казацкий"]
+    question=escape_md(Name_2),
+    answer="Name 2",
+    choices=["Name 1", "Name 2", "Name 3", "Name 4"]
 )
 
 q_3 = Mystery(
-    question=escape_md(Masha_Goluzova),
-    answer="Маша Голузова",
-    choices=["Лера Волошина", "Семья Понасюк", "Маша Голузова", "Дмитрий Киричко"]
+    question=escape_md(Name_3),
+    answer="Name 3",
+    choices=["Name 1", "Name 2", "Name 3", "Name 4"]
 )
 
 q_4 = Mystery(
-    question=escape_md(Andrey_Voloshin),
-    answer="Андрей Волошин",
-    choices=["Лера Волошина", "Тимофей Волошин", "Папа", "Андрей Волошин"]
+    question=escape_md(Name_4),
+    answer="Name 4",
+    choices=["Name 1", "Name 2", "Name 3", "Name 4"]
 )
 
 q_5 = Mystery(
-    question=escape_md(Lera_Voloshina),
-    answer="Лера Волошина",
-    choices=["Папа", "Лера Волошина", "Мама", "Муж"]
+    question=escape_md(Name_5),
+    answer="Name 5",
+    choices=["Name 1", "Name 2", "Name 3", "Name 4"]
 )
 
 q_6 = Mystery(
-    question=escape_md(Timofey_Voloshin),
-    answer="Тимофей Волошин",
-    choices=["Муж", "Тимофей Волошин", "Миша Пузевич", "Вадим Кричко"]
+    question=escape_md(Name_6),
+    answer="Name 6",
+    choices=["Name 1", "Name 2", "Name 3", "Name 4"]
 )
 
 q_7 = Mystery(
-    question=escape_md(Daddy),
-    answer="Папа",
-    choices=["Семья Зуевых", "Семья Понасюк", "Оксана Ковалёва", "Папа"]
+    question=escape_md(Name_7),
+    answer="Name 7",
+    choices=["Name 1", "Name 2", "Name 3", "Name 4"]
 )
 
 q_8 = Mystery(
-    question=escape_md(Husband),
-    answer="Муж",
-    choices=["Семья Понасюк", "Муж", "Семья Зуевых", "Оксана Ковалёва"]
+    question=escape_md(Name_8),
+    answer="Name 8",
+    choices=["Name 1", "Name 2", "Name 3", "Name 4"]
 )
 
 q_9 = Mystery(
-    question=escape_md(Ponasyuk_family),
-    answer="Семья Понасюк",
-    choices=["Наташа Киричко", "Дмитрий Киричко", "Семья Понасюк", "Семья Зуевых"]
+    question=escape_md(Name_9),
+    answer="Name 9",
+    choices=["Name 1", "Name 2", "Name 3", "Name 4"]
 )
 
 q_10 = Mystery(
-    question=escape_md(Natasha_Kirichko),
-    answer="Наташа Киричко",
-    choices=["Наташа Киричко", "Миша Пузевич", "Татьяна Кричко", "Оксана Ковалёва"]
+    question=escape_md(Name_10),
+    answer="Name 10",
+    choices=["Name 1", "Name 2", "Name 3", "Name 4"]
 )
 
 q_11 = Mystery(
-    question=escape_md(Oksana_Kovaleva),
-    answer="Оксана Ковалёва",
-    choices=["Оксана Ковалёва", "Света Полоцкая", "Анатолий Казацкий", "Семья Зуевых"]
+    question=escape_md(Name_11),
+    answer="Name 11",
+    choices=["Name 1", "Name 2", "Name 3", "Name 4"]
 )
 
 q_12 = Mystery(
-    question=escape_md(Zuevs_family),
-    answer="Семья Зуевых",
-    choices=["Татьяна Кричко", "Дмитрий Киричко", "Семья Зуевых", "Роман Мишкевич"]
+    question=escape_md(Name_12),
+    answer="Name 12",
+    choices=["Name 1", "Name 2", "Name 3", "Name 4"]
 )
 
 q_13 = Mystery(
-    question=escape_md(Misha_Puzevich),
-    answer="Миша Пузевич",
-    choices=["Миша Пузевич", "Анатолий Казацкий", "Виталий Казацкий", "Вадим Кричко"]
+    question=escape_md(Name_13),
+    answer="Name 13",
+    choices=["Name 1", "Name 2", "Name 3", "Name 4"]
 )
 
 q_14 = Mystery(
-    question=escape_md(Dima_Kirichko),
-    answer="Дмитрий Киричко",
-    choices=["Мирон Киричко", "Татьяна Кричко", "Дмитрий Киричко", "Марк Киричко"]
+    question=escape_md(Name_14),
+    answer="Name 14",
+    choices=["Name 1", "Name 2", "Name 3", "Name 4"]
 )

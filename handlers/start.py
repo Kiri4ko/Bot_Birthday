@@ -28,9 +28,8 @@ async def command_auth_handler(message: Message):
     await message.delete()
     await message.answer_sticker('CAACAgIAAxkBAAEF4AFjJ4JWO1pIKtf5I4jDPPXNz7eZgAAChwIAAladvQpC7XQrQFfQkCkE')
     await message.answer(
-        f"Привет, *{message.from_user.first_name}*✌\!\n"
-        "Я воспитанный ботик, поэтому не буду спрашивать, сколько тебе годиков😇\n"
-        "Посчитаю сам, для этого укажи дату своего рождения \- используя календарь 🗓",
+        f"HI, *{message.from_user.first_name}*✌\!\n"
+        "I will calculate how old you are, for this, indicate the date of your birth \- using the calendar 🗓",
         reply_markup=await DialogCalendar().start_calendar()
     )
 
@@ -38,9 +37,8 @@ async def command_auth_handler(message: Message):
 async def command_auth_handler_call(call: CallbackQuery):
     await call.message.answer_sticker('CAACAgIAAxkBAAEF4AFjJ4JWO1pIKtf5I4jDPPXNz7eZgAAChwIAAladvQpC7XQrQFfQkCkE')
     await call.message.answer(
-        f"Привет, *{call.from_user.first_name}*✌\!\n"
-        "Я воспитанный ботик, поэтому не буду спрашивать, сколько тебе годиков😇\n"
-        "Посчитаю сам, для этого укажи дату своего рождения \- используя календарь 🗓",
+        f"HI, *{call.from_user.first_name}*✌\!\n"
+        "I will calculate how old you are, for this, indicate the date of your birth \- using the calendar 🗓",
         reply_markup=await DialogCalendar().start_calendar()
     )
 
@@ -50,38 +48,38 @@ async def process_dialog_calendar(call: CallbackQuery, callback_data: {}, state:
     if selected:
         await state.update_data(user_date=str(date.strftime("%d/%m/%Y")))
         await call.message.answer(
-            f'*Дата рождения*: {date.strftime("%d/%m/%Y")} \- указана верно❓',
+            f'*Date of Birth*: {date.strftime("%d/%m/%Y")} \- correct❓',
             reply_markup=inline_buttons_birthday
         )
 
 
 async def command_start_handler(call: CallbackQuery, state: FSMContext):
     date = await state.get_data()
-    if date.get('user_date') != "09/11/1992":
+    if date.get('user_date') != "21/04/1989": # authorization by date
         await call.message.answer_sticker('CAACAgEAAxkBAAEGNlBjWiIi-UPJBPb3kSAl7j7GBqEcpwACKAADOA6CEeJAhB3GAAE0IioE')
         await call.message.answer(
-            f"Упс\.\.\. Для Вас *{call.from_user.first_name}*, поздравлений не найдено\!\n",
+            f"Oops\.\.\. For you *{call.from_user.first_name}*, congratulations not found\!\n",
             reply_markup=inline_buttons_repeat
         )
         await state.finish()
         return
     else:
         await call.message.answer_sticker('CAACAgIAAxkBAAEGMShjV6AxD4c7gnOqPBsAAZ_PSa9zzvMAAosCAAJWnb0K97RiJg2PO_MqBA')
-        photo = InputFile('static/media/olya_avatar.jpg')
+        photo = InputFile('static/media/birthday.jpg')
         await call.message.answer_photo(photo=photo, caption=
-        f"Привет, *Олечка*✌\! 😍\n"
-        "*С ДНЁМ РОЖДЕНИЯ* 🎂\n"
-        "Я твой личный праздничный ботик 🤖\.\n"
-        "Твои самые близкие и любимые \- не без моей помощи, подготовили сюрприз 🎁\.\n"
-        "Чтобы его получить, надо сыграть  со мной в викторину 🎮\.\n"
-        f"Если готова, жми \|*Хочу сюрприз* 🎁\| и полетели🚀🌔👇",
+        f"HI, *Name*✌\! 😍\n"
+        "*HAPPY BIRTHDAY* 🎂\n"
+        "I am your personal holiday boot 🤖\.\n"
+        "Your closest and beloved \- not without my help, prepared a surprise 🎁\.\n"
+        "To get it you have to play a quiz with me 🎮\.\n"
+        f"If you are ready, press \|*I want a surprise* 🎁\| and flew 🚀🌔👇",
                                         reply_markup=inline_buttons_start
                                         )
         await state.finish()
 
 
 async def cmd_cancel_handler(message: Message, state: FSMContext):
-    await message.answer("Текущее действие \- отменено 🛑", reply_markup=ReplyKeyboardRemove())
+    await message.answer("Current action \- cancel 🛑", reply_markup=ReplyKeyboardRemove())
     await message.bot.delete_message(message.chat.id, message.message_id)
     await state.finish()
 

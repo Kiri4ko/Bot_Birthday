@@ -1,4 +1,4 @@
-"""Bot Coin API v.1.0.0. Connected to the API cryptocurrencies market"""
+"""Bot Birthday v.1.0.0. After passing the quiz: question-answer, displays a congratulatory message"""
 
 import config
 
@@ -26,8 +26,8 @@ logger = logging.getLogger(__name__)
 
 async def set_commands(bot: Bot):
     commands = [
-        BotCommand(command="/start", description="Принять поздравления 🎁"),
-        BotCommand(command="/cancel", description="Отменить текущее действие 🛑")
+        BotCommand(command="/start", description="Accept congratulations 🎁"),
+        BotCommand(command="/cancel", description="Cancel 🛑")
     ]
     await bot.set_my_commands(commands)
 

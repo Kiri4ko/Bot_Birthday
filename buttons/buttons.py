@@ -8,19 +8,19 @@ from aiogram.types import (
 
 # buttons Inline
 
-inline_surprise = InlineKeyboardButton(text='Хочу сюрприз 🎁', callback_data="button_surprise")
+inline_surprise = InlineKeyboardButton(text='Want a surprise🎁', callback_data="button_surprise")
 surprise_button = InlineKeyboardMarkup().add(inline_surprise)
-inline_yes = InlineKeyboardButton(text='Да✅', callback_data="button_yes")
+inline_yes = InlineKeyboardButton(text='Yes✅', callback_data="button_yes")
 yes_button = InlineKeyboardMarkup().add(inline_yes)
-inline_no = InlineKeyboardButton(text='Нет❌', callback_data="button_no")
+inline_no = InlineKeyboardButton(text='No❌', callback_data="button_no")
 no_button = InlineKeyboardMarkup().add(inline_no)
 
-inline_right = InlineKeyboardButton(text='Да✅', callback_data="button_right")
+inline_right = InlineKeyboardButton(text='Yes✅', callback_data="button_right")
 right_button = InlineKeyboardMarkup().add(inline_right)
-inline_wrong = InlineKeyboardButton(text='Нет❌', callback_data="button_wrong")
+inline_wrong = InlineKeyboardButton(text='No❌', callback_data="button_wrong")
 wrong_button = InlineKeyboardMarkup().add(inline_wrong)
 
-inline_repeat = InlineKeyboardButton(text='Повторить 🔂', callback_data="button_repeat")
+inline_repeat = InlineKeyboardButton(text='Repeat 🔂', callback_data="button_repeat")
 repeat_button = InlineKeyboardMarkup().add(inline_repeat)
 
 inline_sorry = InlineKeyboardButton(text='Sorry 🙏', callback_data="button_sorry")
